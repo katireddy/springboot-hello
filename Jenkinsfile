@@ -36,7 +36,7 @@ pipeline {
         }
         stage('Docker Push'){
             steps {
-                sh 'docker push roopadocker12 /docker_jenkins_springboot:${BUILD_NUMBER}'
+                sh 'docker push roopadocker12/docker_jenkins_springboot:${BUILD_NUMBER}'
             }
         }
         stage('Docker deploy'){
